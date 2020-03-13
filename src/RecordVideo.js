@@ -98,7 +98,7 @@ export default class RecordVideo extends React.Component {
         console.log(">>>this.state.videoURI", this.state.videoURI)
         const isFocused = this.props.navigation.isFocused();
         return (
-            <>
+            <View style={{ flex: 1 }}>
                 <Text>Take Video</Text>
                 <RNCamera
                     ref={ref => {
@@ -108,6 +108,8 @@ export default class RecordVideo extends React.Component {
                         flex: 1,
                         justifyContent: 'flex-end',
                         alignItems: 'center',
+                        justifyContent: 'center',
+                        flexDirection: 'column',
                     }}
                     type={RNCamera.Constants.Type.back}
                     flashMode={RNCamera.Constants.FlashMode.on}
@@ -145,7 +147,7 @@ export default class RecordVideo extends React.Component {
                 <View style={{ flex: 0, flexDirection: "row", justifyContent: "center" }}>
                     {button}
                 </View>
-            </>
+            </View>
         );
     }
 };
