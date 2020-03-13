@@ -98,7 +98,6 @@ export default class RecordVideo extends React.Component {
         // const isFocused = this.props.navigation.isFocused();
         return (
             <View style={{ flex: 1 }}>
-                <Text>Take Video</Text>
                 <RNCamera
                     ref={ref => {
                         this.camera = ref;
@@ -143,7 +142,7 @@ export default class RecordVideo extends React.Component {
                             right: 0,
                         }} />
                 }
-                <View style={{ flex: 0, flexDirection: "row", justifyContent: "center" }}>
+                <View style={{ marginBottom: 20 }}>
                     {button}
                 </View>
             </View>

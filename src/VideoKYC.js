@@ -9,7 +9,7 @@ export default class VideoKYC extends Component {
     constructor() {
         super();
         this.state = {
-            page: ""
+            page: "record"
         };
     }
     saveURI = url => {
@@ -21,26 +21,30 @@ export default class VideoKYC extends Component {
         const { page } = this.state;
         return (
             <View style={styles.container}>
-                <TouchableOpacity
-                    style={{ backgroundColor: "green", padding: 8 }}
-                    onPress={el => this.setState({ page: 'watch' })}
-                >
-                    <Text name="watch" style={{
-                        fontSize: 14,
-                        fontWeight: "bold",
-                        color: 'white'
-                    }}>Watch</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    style={{ backgroundColor: "blue", padding: 8 }}
-                    onPress={el => this.setState({ page: 'record' })}
-                >
-                    <Text name="record" style={{
-                        fontSize: 14,
-                        fontWeight: "bold",
-                        color: 'white'
-                    }}>Record</Text>
-                </TouchableOpacity>
+                <View style={{
+                    flexDirection: 'row'
+                }}>
+                    <TouchableOpacity
+                        style={{ backgroundColor: "#f194ff", padding: 8, width: '50%' }}
+                        onPress={el => this.setState({ page: 'watch' })}
+                    >
+                        <Text name="watch" style={{
+                            fontSize: 14,
+                            fontWeight: "bold",
+                            color: 'white'
+                        }}>Watch</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                        style={{ backgroundColor: "#0074d9", padding: 8, width: '50%' }}
+                        onPress={el => this.setState({ page: 'record' })}
+                    >
+                        <Text name="record" style={{
+                            fontSize: 14,
+                            fontWeight: "bold",
+                            color: 'white'
+                        }}>Record</Text>
+                    </TouchableOpacity>
+                </View>
 
                 {page === "record" && (
                     <View style={styles.contentContainer}>
@@ -60,9 +64,9 @@ export default class VideoKYC extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: "flex-start"
+        justifyContent: "center",
     },
     contentContainer: {
-        height: height - 100
+        height: height - 130
     }
 });

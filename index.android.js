@@ -6,12 +6,13 @@ import {
 } from 'react-native';
 
 import App from './src/App';
+import NavApp from './src/NavApp';
 
 class HelloUser extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <App />
+        <NavApp />
       </View>
     )
   }
