@@ -11,7 +11,6 @@ import {
 
 import { RNCamera } from 'react-native-camera';
 import Video from 'react-native-video';
-import { withNavigationFocus } from "react-navigation";
 
 const ENDPOINT = "http://192.168.178.47:3000";
 
@@ -96,7 +95,7 @@ export default class RecordVideo extends React.Component {
             );
         }
         console.log(">>>this.state.videoURI", this.state.videoURI)
-        const isFocused = this.props.navigation.isFocused();
+        // const isFocused = this.props.navigation.isFocused();
         return (
             <View style={{ flex: 1 }}>
                 <Text>Take Video</Text>

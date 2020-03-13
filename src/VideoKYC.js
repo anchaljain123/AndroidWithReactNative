@@ -22,7 +22,7 @@ export default class VideoKYC extends Component {
         return (
             <View style={styles.container}>
                 <TouchableOpacity
-                    style={{ backgroundColor: "green", padding:8}}
+                    style={{ backgroundColor: "green", padding: 8 }}
                     onPress={el => this.setState({ page: 'watch' })}
                 >
                     <Text name="watch" style={{
@@ -44,12 +44,12 @@ export default class VideoKYC extends Component {
 
                 {page === "record" && (
                     <View style={styles.contentContainer}>
-                        <RecordVideo saveURI={this.saveURI}/>
+                        <RecordVideo saveURI={this.saveURI} />
                     </View>
                 )}
                 {page === "watch" && (
                     <View style={styles.contentContainer}>
-                        <ViewVideo url={this.state.url}/>
+                        <ViewVideo url={this.state.url} />
                     </View>
                 )}
             </View>

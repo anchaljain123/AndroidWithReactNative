@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-    StyleSheet,
-    Text,
-    View,
-} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import VideoKYC from './VideoKYC';
 import ImageKYC from './ImageKYC';
@@ -12,7 +8,7 @@ export default class App extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <VideoKYC />
+                <ImageKYC />
             </View>
         )
     }
@@ -20,8 +16,7 @@ export default class App extends React.Component {
 var styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: 'column',
-        // backgroundColor: 'yellow',
+        // backgroundColor: 'red'
     }
 });
 
