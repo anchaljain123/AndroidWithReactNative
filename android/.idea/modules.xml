@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/My Application.iml" filepath="$PROJECT_DIR$/My Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-My Application.iml" filepath="$PROJECT_DIR$/android-My Application.iml" group="My Application" />
+      <module fileurl="file://$PROJECT_DIR$/app/android-app.iml" filepath="$PROJECT_DIR$/app/android-app.iml" group="My Application/app" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-camera/android/android-react-native-camera.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-camera/android/android-react-native-camera.iml" group="My Application/react-native-camera" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-camera/android/react-native-camera.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-camera/android/react-native-camera.iml" group="My Application/react-native-camera" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-video/android/react-native-video.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-video/android/react-native-video.iml" group="My Application/react-native-video" />
     </modules>
   </component>
 </project>

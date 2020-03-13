@@ -20,6 +20,7 @@ import com.facebook.react.bridge.Callback;
 
 import org.reactnative.camera.RNCameraPackage;
 import javax.annotation.Nullable;
+import com.brentvatne.react.ReactVideoPackage;
 
 public class MyReactActivity extends AppCompatActivity implements DefaultHardwareBackBtnHandler, PermissionAwareActivity {
     private ReactRootView mReactRootView;
@@ -45,6 +46,7 @@ public class MyReactActivity extends AppCompatActivity implements DefaultHardwar
                 .setJSMainModulePath("index.android")
                 .addPackage(new MainReactPackage())
                 .addPackage(new RNCameraPackage())
+                .addPackage(new ReactVideoPackage())
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.BEFORE_CREATE)
                 .build();
@@ -121,5 +123,5 @@ public class MyReactActivity extends AppCompatActivity implements DefaultHardwar
             }
         };
     }
-
+    
 }
